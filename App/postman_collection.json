@@ -1,0 +1,99 @@
+{
+  "info": {
+    "name": "API IPTU BH 2022",
+    "description": "API para consulta de dados do IPTU de Belo Horizonte - Exercício 2022",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Todos os Bairros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bairros",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["bairros"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Todos os Lançamentos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/lancamentos",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["lancamentos"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Bairro por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bairros/1",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["bairros", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Bairro por Nome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/buscar/savassi",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["buscar", "savassi"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Bairro Inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bairros/9999",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["bairros", "9999"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
